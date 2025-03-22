@@ -1,0 +1,37 @@
+## Excluir binários e arquivos compilados
+bin/
+obj/
+
+## Excluir pacotes NuGet baixados
+*.nupkg
+*.snupkg
+packages/
+
+## Excluir arquivos de build do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Excluir arquivos do Visual Studio Code
+.vscode/
+
+## Excluir arquivos de logs e temporários
+*.log
+*.tlog
+
+## Excluir diretórios de teste
+TestResults/
+
+## Excluir cache e configuração do Rider
+.idea/
+*.iml
+
+## Excluir arquivos gerados automaticamente
+appsettings.*.json
+secrets.json
+
+## Excluir arquivos de deploy
+publish/
+*.Publish.xml
