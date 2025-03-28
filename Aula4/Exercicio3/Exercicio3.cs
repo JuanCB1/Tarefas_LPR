@@ -1,5 +1,4 @@
-﻿
-Console.ForegroundColor = ConsoleColor.Cyan;
+﻿Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("-------------");
 Console.WriteLine(" Exercício 3 ");
 Console.WriteLine("-------------");
