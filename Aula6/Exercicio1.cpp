@@ -1,35 +1,37 @@
 #include <iostream>
 
-#define Red     "\033[31m"
-#define Blue    "\033[34m"
-#define Reset   "\033[0m"
+#define Red "\033[31m"
+#define Blue "\033[34m"
+#define Reset "\033[0m"
 
 using namespace std;
 
-int reverterNumero(int num) {
-    int numeroRevertido = 0;
+int reverterNumero(int numero)
+{
+    int reverso = 0, digito;
 
-    while (num > 0) {
-        int digito = num % 10;
-        numeroRevertido = numeroRevertido * 10 + digito; 
-        num = num / 10;
+    while (numero != 0)
+    {
+        digito = numero % 10;
+        reverso = reverso * 10 + digito;
+        numero /= 10;
     }
-    
-    return numeroRevertido;
+    return reverso;
 }
 
-int main() {
+int main()
+{
     cout << Blue << "-----------------" << Reset << endl;
     cout << Blue << "   Exercício 1   " << Reset << endl;
     cout << Blue << "-----------------" << Reset << endl;
 
-    int numero;
-    int numeroRevertido = reverterNumero(numero);
+    int numero, resultado;
 
-    cout << "Digite seu numero inteiro: ";
+    cout << "Digite um número inteiro: ";
     cin >> numero;
-    
-    cout << "Número revertido: " << numeroRevertido << endl;
-    
+
+    resultado = reverterNumero(numero);
+    cout << Red << "Número reverso: " << Reset << resultado << endl;
+
     return 0;
 }
