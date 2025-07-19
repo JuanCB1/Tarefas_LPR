@@ -1,9 +1,14 @@
 #include <iostream>
 #include <string>
 
+#define Red     "\033[31m"
+#define Blue    "\033[34m"
+#define Reset   "\033[0m"
+
 using namespace std;
 
-struct Livro {
+struct Livro
+{
     string Titulo;
     string Autor;
     int AnoPublicacao;
@@ -11,23 +16,29 @@ struct Livro {
     float Preco;
 };
 
-int main() {
+int main()
+{
+    cout << Blue << "-----------------" << Reset << endl;
+    cout << Blue << "   Exercício 2   " << Reset << endl;
+    cout << Blue << "-----------------" << Reset << endl;
+
     Livro livros[3];
     float precoTotal = 0;
     int totalPaginas = 0;
 
-    for (int i = 0; i < 3; i++) {
-        cout << "\nLivro " << i + 1 << endl;
+    for (int i = 0; i < 3; i++)
+    {
+        cout << Blue << "\nLivro " << i + 1 << Reset << endl;
 
-        cout << "Titulo: ";
+        cout << Red << "Titulo: " << Reset;
         cin >> livros[i].Titulo;
-        cout << "Autor: ";
+        cout << Red << "Autor: " << Reset;
         cin >> livros[i].Autor;
-        cout << "Ano de Publicacao: ";
+        cout << Red << "Ano de Publicacao: " << Reset;
         cin >> livros[i].AnoPublicacao;
-        cout << "Numero de Paginas: ";
+        cout << Red << "Numero de Paginas: " << Reset;
         cin >> livros[i].NumeroPaginas;
-        cout << "Preco: R$ ";
+        cout << Red << "Preco: R$ " << Reset;
         cin >> livros[i].Preco;
 
         precoTotal += livros[i].Preco;
