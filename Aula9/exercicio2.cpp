@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     cout << Blue << "-----------------" << Reset << endl;
-    cout << Blue << "   Exercício 1   " << Reset << endl;
+    cout << Blue << "   Exercício 2   " << Reset << endl;
     cout << Blue << "-----------------" << Reset << endl;
 
     vector<int> numeros;

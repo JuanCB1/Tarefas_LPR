@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 class Program
 {
@@ -62,7 +61,7 @@ class Program
             Console.WriteLine(" Lista em ordem crescente ");
             Console.WriteLine("--------------------------");
             Console.ResetColor();
-            
+
             linha = linha.OrderBy(n => n.Tamanho).ToList();
             Console.WriteLine(string.Join(" , ", linha.Select(n => n.Texto)));
         }
