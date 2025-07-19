@@ -1,9 +1,26 @@
 # Tarefas_LPR
 ## 📝 Descrição <a name="Descrição"></a>
 
-Esse repositório, consiste em testes para validação do conhecimento do usuário
-em linguagens C++ e C#.
+Repositório destinado à prática e desenvolvimento de habilidades nas linguagens **C++** e **C#**,
+voltado para a disciplina de **Lógica de Programação e Raciocínio (LPR)**.
+
+> 💡 Aqui você encontra soluções organizadas por aula, com foco em aprendizado progressivo e
+ domínio da lógica de programação.
 <br>
+
+## 🧠 Sobre o Projeto <a name="Sobre-o-Projeto"></a>
+
+Este repositório contém **tarefas e exercícios práticos**, criados para validar e aprofundar
+o conhecimento em **C++ e C#**, abrangendo estruturas fundamentais da programação, como:
+
+- Entrada e saída de dados  
+- Estruturas condicionais e de repetição  
+- Funções e modularização
+- Estrutura de dados 
+- Vetores e Matrizes
+- Structs
+- Programação orientada a objetos (C#)
+- Listas e Dicionários
 
 ## 📥 Requisitos <a name="Requisitos"></a>
 1. Istalar a extenção C/C++
