@@ -23,12 +23,12 @@ o conhecimento em **C++ e C#**, abrangendo estruturas fundamentais da programaç
 - Listas e Dicionários
 
 > 💡 Resumo dos Estudos por Diretório
- - Aula4 – Estudo dedicado às Estruturas Condicionais.
- - Aula5 – Estudo dedicado às Estruturas de Repetição.
- - Aula6 – Estudo dedicado às Funções.
- - Aula7 – Estudo dedicado a Vetores e Matrizes.
- - Aula8 – Estudo dedicado a Registros (Structs).
- - Aula9 – Estudo dedicado a Listas e Dicionários.
+> - Aula4 – Estudo dedicado às Estruturas Condicionais.
+> - Aula5 – Estudo dedicado às Estruturas de Repetição.
+> - Aula6 – Estudo dedicado às Funções.
+> - Aula7 – Estudo dedicado a Vetores e Matrizes.
+> - Aula8 – Estudo dedicado a Registros (Structs).
+> - Aula9 – Estudo dedicado a Listas e Dicionários.
 
 ## 📥 Requisitos <a name="Requisitos"></a>
 1. Istalar a extenção C/C++
