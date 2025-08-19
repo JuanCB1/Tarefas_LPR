@@ -29,6 +29,7 @@ o conhecimento em **C++ e C#**, abrangendo estruturas fundamentais da programaç
  - Aula7 – Estudo dedicado a Vetores e Matrizes.
  - Aula8 – Estudo dedicado a Registros (Structs).
  - Aula9 – Estudo dedicado a Listas e Dicionários.
+ <br>
 
 ## 📥 Requisitos <a name="Requisitos"></a>
 1. Istalar a extenção C/C++
