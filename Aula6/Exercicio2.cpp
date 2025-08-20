@@ -1,3 +1,12 @@
+/*
+Exercício 2)
+Construa um algoritmo em C++ que agrupe em funções os exercícios 1, 3 e 4 da tarefa
+de estruturas de repetições. Cada exercício deve estar contido em uma função
+separada. Defina os parâmetros de modo eficiente e generalista. Construa um menu
+na função main. Reuse os códigos das suas respostas da tarefa.
+*/
+
+// Funções necessárias
 #include <iostream>
 
 #define Red "\033[31m"
@@ -7,6 +16,7 @@
 
 using namespace std;
 
+// Exercício 1: Calcula a média dos números pares
 void exercicio1()
 {
     int quantidade, num, soma_pares = 0, cont_pares = 0, contador = 0;
@@ -18,6 +28,7 @@ void exercicio1()
     cout << "Quantos números serão digitados? ";
     cin >> quantidade;
 
+    // Lê os números e soma apenas os pares
     while (contador < quantidade)
     {
         cout << "Digite o " << contador + 1 << "º número: ";
@@ -30,6 +41,7 @@ void exercicio1()
         contador++;
     }
 
+    // Calcula e exibe a média
     if (cont_pares > 0)
     {
         cout << Blue << "A média dos números pares é: " << Reset << (double)soma_pares / cont_pares << endl;
@@ -40,6 +52,7 @@ void exercicio1()
     }
 }
 
+// Exercício 3: Soma números ímpares múltiplos de 3 entre 50 e 500
 void exercicio3()
 {
     int soma = 0;
@@ -48,8 +61,10 @@ void exercicio3()
     cout << Blue << "   Aula 5 - Exercicio 3   " << Reset << endl;
     cout << Blue << "------------------------------" << Reset << endl;
 
+    // Percorre números de 50 a 500
     for (int i = 50; i <= 500; i++)
     {
+        // Verifica se é ímpar e múltiplo de 3
         if (i % 2 != 0 && i % 3 == 0)
         {
             soma += i;
@@ -59,6 +74,7 @@ void exercicio3()
     cout << Blue << "A soma de todos os números ímpares múltiplos de 3 entre 50 e 500 é: " << Reset << soma << endl;
 }
 
+// Exercício 4: Soma dos dígitos do quadrado de um número
 void exercicio4()
 {
     int num, resposta, somaD = 0;
@@ -70,8 +86,9 @@ void exercicio4()
     cout << "Insira um número: ";
     cin >> num;
 
-    resposta = num * num;
+    resposta = num * num;  // Calcula o quadrado
 
+    // Soma os dígitos do quadrado
     while (resposta > 0)
     {
         int digito = resposta % 10;
@@ -86,8 +103,10 @@ int main()
 {
     int opcao;
 
+    // Menu principal com loop
     do
     {
+        // Exibe as opções do menu
         cout << Blue << "------------------------------" << Reset << endl;
         cout << Blue << "     Aula 6 - Exercicio 2        " << Reset << endl;
         cout << Blue << "------------------------------" << Reset << endl;
@@ -98,6 +117,7 @@ int main()
         cout << "Escolha uma opção: ";
         cin >> opcao;
 
+        // Executa a função correspondente à opção
         switch (opcao)
         {
         case 1:

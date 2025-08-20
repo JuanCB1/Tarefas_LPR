@@ -1,3 +1,10 @@
+/*
+Exercício 1)
+Construa uma função em C++ que retorne
+o reverso de um número inteiro.
+*/
+
+// Funções necessárias
 #include <iostream>
 
 #define Red "\033[31m"
@@ -6,10 +13,12 @@
 
 using namespace std;
 
+// Função para reverter os dígitos de um número
 int reverterNumero(int numero)
 {
     int reverso = 0, digito;
 
+    // Extrai cada dígito e reconstrói o número invertido
     while (numero != 0)
     {
         digito = numero % 10;
@@ -30,6 +39,7 @@ int main()
     cout << "Digite um número inteiro: ";
     cin >> numero;
 
+    // Chama função e exibe resultado
     resultado = reverterNumero(numero);
     cout << Red << "Número reverso: " << Reset << resultado << endl;
 
