@@ -1,3 +1,15 @@
+/*
+Exercício 2) C++
+Leia 2 valores inteiros (A e B). Após, o
+programa deve mostrar uma mensagem
+"Sao Multiplos" ou "Nao sao Multiplos",
+indicando se os valores lidos são múltiplos
+entre si. Atenção: os números podem ser
+digitados em ordem crescente ou
+decrescente.
+*/
+
+// Funções necessárias
 #include <iostream>
 
 #define Yellow  "\033[33m"
@@ -18,6 +30,7 @@ int main()
     cout << "Digite dois numeros inteiros separados por um espaco: ";
     cin >> A >> B;
 
+    // Verifica se um número é múltiplo do outro
     if (A % B == 0 || B % A == 0)
     {
         cout << Yellow << "Sao Multiplos" << Reset << endl;
